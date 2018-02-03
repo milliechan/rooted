@@ -1,0 +1,2 @@
+class SensoryDetailsController < ApplicationController
+end
