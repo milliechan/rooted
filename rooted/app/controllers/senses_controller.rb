@@ -1,8 +1,8 @@
 class SensesController < ApplicationController
   before_action :set_sense, only: [:show, :edit, :update, :destroy]
 
-  # GET /tests
-  # GET /tests.json
+  # GET /senses
+  # GET /senses.json
   def index
     @senses = Sense.all
     @sensory_details = SensoryDetail.all
