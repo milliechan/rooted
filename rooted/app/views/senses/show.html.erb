@@ -1,7 +1,7 @@
 <script>
   $(document).ready(function() {
     const sense = document.getElementsByClassName('sense')
-    $(sense).click((e) => { 
+    $(sense).click((e) => {
       const bubbleToPop = e.target
       $(bubbleToPop).fadeOut();
     })
@@ -10,7 +10,7 @@
 <div class="bg">
   <h1>Name <%= params[:id] %> things you can <%= @sense.label %></h1>
     <% @sensory_details.each do |item| %>
-  <p class="sense"><%= item.content %></p>
+  <p class="sense bubble x1"><%= item.content %></p>
   <% end %>
   <%= link_to '⬇️', next_button_path %>
 <div>
