@@ -1,5 +1,5 @@
 FactoryBot.define do
   factory :sense do
-    label "MyString"
+    label "See"
   end
 end
