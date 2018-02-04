@@ -1,2 +1,7 @@
-<h1>Grounding Exercises</h1>
-<button>Begin</button>
+<% if !params[:review]%>
+  <h1>Grounding Exercises</h1>
+  <%= link_to 'Begin', sense_path(5), class: 'btn' %>
+<% else %>
+  Here's an affirmation
+  <%= link_to 'Start over' %>
+<% end %>
