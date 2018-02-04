@@ -3166,3 +3166,21 @@ Processing by SensesController#show as HTML
 Completed 200 OK in 95ms (Views: 91.5ms | ActiveRecord: 0.6ms)
 
 
+Started GET "/" for 127.0.0.1 at 2018-02-04 07:54:56 -0800
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/ericayingling/.rvm/gems/ruby-2.3.3/gems/railties-5.1.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/ericayingling/.rvm/gems/ruby-2.3.3/gems/railties-5.1.4/lib/rails/templates/rails/welcome/index.html.erb (4.2ms)
+Completed 200 OK in 27ms (Views: 16.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/senses/5" for 127.0.0.1 at 2018-02-04 07:55:15 -0800
+Processing by SensesController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mSense Load (0.4ms)[0m  [1m[34mSELECT  "senses".* FROM "senses" WHERE "senses"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering senses/show.html.erb within layouts/application
+  [1m[36mSensoryDetail Load (1.1ms)[0m  [1m[34mSELECT "sensory_details".* FROM "sensory_details" WHERE "sensory_details"."sense_id" = $1[0m  [["sense_id", 5]]
+  Rendered senses/show.html.erb within layouts/application (19.4ms)
+Completed 200 OK in 1291ms (Views: 1234.4ms | ActiveRecord: 14.2ms)
+
+
