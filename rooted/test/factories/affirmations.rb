@@ -1,5 +1,5 @@
 FactoryBot.define do
   factory :affirmation do
-    content "MyString"
+    content 'What is the last thing you laughed at?'
   end
 end
